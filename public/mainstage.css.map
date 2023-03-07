@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["partials/_variables.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA","file":"mainstage.css"}
+{"version":3,"sourceRoot":"","sources":["partials/_variables.scss","partials/_header.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AClBF;EACI;;;AAIA;EACI;;AAEJ;EACI;;AAEJ;EACI;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;AACA;EACI","file":"mainstage.css"}
