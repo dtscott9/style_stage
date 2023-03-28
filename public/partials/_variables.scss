@@ -25,9 +25,8 @@ $break-large: 500px;
 }
 
 @mixin gridPlanetDisplay() {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 0px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   @include breakpoint() {
       grid-template-columns: auto auto;
