@@ -1,0 +1,18 @@
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    & a {
+        width: 2px;
+        color: var(--color-text);
+        text-decoration: none;
+        transition: 1.5s ease;
+        padding: 15px;
+        &:hover{
+            background-color: white;
+            border-radius: 30px;
+            transition: 1s ease;
+            color: black;
+        }
+    }
+}

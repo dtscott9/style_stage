@@ -23,11 +23,9 @@
     width: 13%;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    & a {
-        text-decoration: none;
+a {
+    color: var(--color-background);
+    &:hover{
+        color: var(--color-secondary);
     }
 }

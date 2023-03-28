@@ -1,19 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 :root {
-  --color-primary: #04040c;
+  --color-primary: #000000;
   --color-primary-alt: #908390;
-  --color-secondary: #6D809F;
+  --color-secondary: #6d809f;
   --color-background: #d2fbf7;
   --color-text: #dbd5c1;
   --color-light: #fff;
+  --font-primary: Orbitron, sans-serif;
   --font-size-h1: 2em;
   --font-size-h2: 1.8rem;
   --font-size-h3: 1.5em;
   --font-size-h4: 1.2rem;
   --font-size-text: 1rem;
   --border-radius: 10%;
-  }
+}
 
-  /*TO DO 
+$break-large: 500px;
+
+@mixin breakpoint() {
+  @media (min-width: $break-large) {
+    @content;
+  }
+}
+
+@mixin gridPlanetDisplay() {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0px;
+  align-items: center;
+  @include breakpoint() {
+      grid-template-columns: auto auto;
+  }
+}
+
+/*TO DO 
   1) --font-family: font-family: 'Orbitron', sans-serif; 
   (LINK: <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

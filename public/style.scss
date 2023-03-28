@@ -1,5 +1,5 @@
 // @import "fonts";
-
+@import "partials/variables";
 // You can modify the theme directly, or override some of the variables
 // Overrides just need placed prior to the theme import
 // For example:
@@ -19,4 +19,5 @@
 // @import "profile";
 @import "partials/footer";
 // @import "links";
-@import "partials/variables";
+
+@import "partials/_setting.scss"
