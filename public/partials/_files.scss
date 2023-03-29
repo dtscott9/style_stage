@@ -6,6 +6,7 @@
         width: 118%;
         height: 380px;
         z-index: -1;
+        margin: auto;
         @include breakpoint() {
             width: 350px;
         }
@@ -14,18 +15,31 @@
 
 #files div {
     z-index: 100;
-    width: 60%;
+    width: 20%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     & h3 {
         font-size: 50px;
         margin-bottom: 15px;
+        text-align: left;
     }
     & a {
-        margin: 20px auto;
+        display: grid;
+        grid-template-columns: auto;
+        margin: 20px ;
         text-decoration: none;
-        border: solid 3px white;
         padding: 15px;
         color: var(--color-light);
+        transition: 1s ease;
+        z-index: 2;
+        width: 0;
+        // background-color: white;
+        &:hover {
+            transition: 1s ease;
+            background-color: white;
+            color: black;
+            padding-right: 400px;
+        }
     }
 }

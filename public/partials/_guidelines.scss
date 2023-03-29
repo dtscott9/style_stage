@@ -6,6 +6,7 @@
          width: 118%;
          height: 499px;
          z-index: -1;
+         margin: auto;
          @include breakpoint() {
              width: 500px;
          }

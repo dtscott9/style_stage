@@ -6,6 +6,7 @@
         width: 118%;
         height: 396px;
         z-index: -1;
+        margin: auto;
         @include breakpoint() {
             width: 400px;
         }
@@ -16,6 +17,7 @@
         width: 118%;
         height: 500px;
         z-index: -1;
+        margin: auto;
         @include breakpoint() {
           width: 500px;
         }
