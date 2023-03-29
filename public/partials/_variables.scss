@@ -28,9 +28,7 @@ $break-large: 500px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  @include breakpoint() {
-      grid-template-columns: auto auto;
-  }
+  justify-content: center;
 }
 
 /*TO DO 

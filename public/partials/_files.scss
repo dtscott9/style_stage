@@ -1,0 +1,31 @@
+#files {
+    @include gridPlanetDisplay();
+    &::after {
+        content: "";
+        background-image: url("images/mercury.png");
+        width: 118%;
+        height: 380px;
+        z-index: -1;
+        @include breakpoint() {
+            width: 350px;
+        }
+    }
+}
+
+#files div {
+    z-index: 100;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    & h3 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    & a {
+        margin: 20px auto;
+        text-decoration: none;
+        border: solid 3px white;
+        padding: 15px;
+        color: var(--color-light);
+    }
+}

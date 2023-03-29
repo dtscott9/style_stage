@@ -1,0 +1,22 @@
+#guidelines {
+    @include gridPlanetDisplay();
+     &::before{
+         content: "";
+         background-image: url("images/venus.png");
+         width: 118%;
+         height: 499px;
+         z-index: -1;
+         @include breakpoint() {
+             width: 500px;
+         }
+     }
+ }
+ 
+ #guidelines section {
+     z-index: 100;
+     width: 50%;
+     text-align: center;
+     & h2 {
+         margin: auto;
+     }
+ }

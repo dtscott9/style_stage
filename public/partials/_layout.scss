@@ -13,8 +13,13 @@ main {
     outline: none;
   }
 
+  h2{
+    margin: auto;;
+  }
+
   h3 {
-    color: var(--color-primary);
+    text-align: center;
+    margin: auto;
   }
 }
 
