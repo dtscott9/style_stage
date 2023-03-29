@@ -1,0 +1,17 @@
+.profile{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    & ul {
+        padding: 0;
+        & li {
+            list-style: none;
+        }
+    }
+    & #profile-title{
+        font-size: 25px;
+    }
+}
