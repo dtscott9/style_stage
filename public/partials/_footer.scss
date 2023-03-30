@@ -1,8 +1,27 @@
 .page-footer {
     background-color: #44445c;
     display: flex;
+    border: none;
 }
 
-svg{ //stars
-    width: 120px;
+.page-footer ul,
+.features {
+  display: grid;
+  margin: 0 0 2rem;
+  padding: 0;
+  grid-gap: 1em;
+  list-style: none;
+  
+}
+
+.page-footer .container {
+  display: flex;
+ flex-direction: row;
+ flex-wrap: unset;
+ padding-top: 1.5%;
+}
+
+.page-footer .container p {
+    max-width: 20ch;
+    margin: 2%;
 }
