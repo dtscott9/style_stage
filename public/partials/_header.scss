@@ -15,12 +15,20 @@
 }
 
 .link-github {
-    display: flex;
-    align-items: center;
+    display: flex; 
     justify-content: center;
-    // border: solid 2px black;
-    margin: auto;
-    width: 13%;
+    align-items: center;
+    text-decoration: none;
+    & svg{
+        display: none;
+    }
+    &::before {
+        text-align: center;
+        content: "💫";
+        margin-right: 20px;
+        margin-bottom: 3px;
+        width: 5px;
+    }
 }
 
 a {

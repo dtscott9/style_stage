@@ -1,7 +1,11 @@
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
+    & li {
+        margin: 3px;
+    }
     & a {
         width: 2px;
         color: var(--color-text);
