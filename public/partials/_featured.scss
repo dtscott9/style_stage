@@ -1,26 +1,31 @@
 #styles {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px auto;
-    margin-left: 20px;
-    padding-bottom: 0;
-    & h2{
-        text-align: start;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 0;
+  & h2 {
+    text-align: start;
+  }
+  & > .container {
+    margin-bottom: 50px;
+    width: 80%;
+  }
+  &::after {
+    content: "";
+    background-image: url("images/sun_small.png");
+    width: 300px;
+    height: 100px;
+    z-index: -1;
+    margin-top: 50px;
+    margin: auto;
+    @include breakpoint($break-b) {
+      background-image: url("images/sun.png");
+      width: 950px;
+      height: 170px;
     }
-    &::after {
-        content: "";
-        background-image: url("images/sun.png");
-        width: 100%;
-        height: 300px;
-        z-index: -1;
-        margin-top: 20px;
-        margin: auto;
-        max-width: 100%;
-        @include breakpoint() {
-          width: 100%;
-        }
-    }
+  }
 }

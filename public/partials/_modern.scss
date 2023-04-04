@@ -1,6 +1,9 @@
 #about section:nth-of-type(2) {
   z-index: 100;
-  width: 50%;
+  width: 100%;
+  @include breakpoint($break-b) {
+      width: 50%;
+  }
   text-align: center;
   & h2 {
     margin: auto;

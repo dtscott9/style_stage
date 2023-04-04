@@ -16,9 +16,10 @@
   --border-radius: 10%;
 }
 
-$break-large: 500px;
+$break: 500px;
+$break-b: 1050px;
 
-@mixin breakpoint() {
+@mixin breakpoint($break-large) {
   @media (min-width: $break-large) {
     @content;
   }
