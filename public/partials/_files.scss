@@ -45,6 +45,7 @@
     @include breakpoint($break-b) {
       display: grid;
       grid-template-columns: auto;
+      
       margin: 20px;
       transition: 1s ease;
       z-index: 2;
@@ -55,11 +56,18 @@
     text-decoration: none;
     padding: 15px;
     color: var(--color-light);
+    border-top: solid 1px white;
+    border-left: solid 1px white;
+    border-bottom: solid 1px white;
+    border-radius: 25px;
+    // width: 40ch;
     &:hover {
       transition: 1s ease;
       background-color: white;
       color: black;
+      
       padding-right: 400px;
+
     }
   }
 }
