@@ -1,0 +1,41 @@
+#about {
+  @include gridPlanetDisplay();
+  &::before {
+    content: "";
+    background-image: url("images/mars_small.png");
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    margin: auto;
+    @include breakpoint($break-b) {
+      width: 400px;
+      height: 396px;
+      background-image: url("images/mars.png");
+    }
+  }
+  &::after {
+    content: "";
+    background-image: url("images/earth_small.png");
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    margin: auto;
+    @include breakpoint($break-b) {
+      width: 500px;
+      height: 502px;
+      background-image: url("images/earth.png");
+    }
+  }
+}
+
+#about section:nth-of-type(1) {
+  z-index: 100;
+  width: 100%;
+  @include breakpoint($break-b) {
+    width: 60%;
+  }
+  text-align: center;
+  & h2 {
+    margin: auto;
+  }
+}

@@ -1,0 +1,22 @@
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    & li {
+        margin: 3px;
+    }
+    & a {
+        width: 2px;
+        color: var(--color-text);
+        text-decoration: none;
+        transition: 1.5s ease;
+        padding: 10px;
+        &:hover{
+            background-color: white;
+            border-radius: 30px;
+            transition: 1s ease;
+            color: black;
+        }
+    }
+}

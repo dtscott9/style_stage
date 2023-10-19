@@ -1,0 +1,39 @@
+.link-github svg {
+    width: 50px;
+}
+
+.container {
+    & h1:first-of-type {
+        text-align: center;
+    }
+    & p:first-of-type {
+        text-align: center;
+    }
+    & h2:first-of-type {
+        text-align: center;
+    }
+}
+
+.link-github {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    & svg{
+        display: none;
+    }
+    &::before {
+        text-align: center;
+        content: "💫";
+        margin-right: 20px;
+        margin-bottom: 3px;
+        width: 5px;
+    }
+}
+
+a {
+    color: var(--color-background);
+    &:hover{
+        color: var(--color-secondary);
+    }
+}

@@ -1,0 +1,72 @@
+#styles {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 0;
+  
+  & h2 {
+    text-align: start;
+  }
+  & > .container {
+    margin-bottom: 50px;
+    width: 80%;
+   }
+
+   & a {
+    border-top: solid 1px white;
+    // border-left: solid 1px white;
+    // border-bottom: solid 1px white;
+    border-radius: 15px;
+    padding: 3%;
+    inline-size: 40px;
+    margin-top: 30px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    // 
+    // HOVER EFFECT ON THIS ELEMENT:
+    // Attributed to: https://codepen.io/t_afif/pen/poawLeQ 
+    --b: 0.1em;   /* the thickness of the line */
+            --c: lightgray; /* the color */
+            
+            color:white;
+            padding-block: var(--b);
+            background: 
+              linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+              linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+            -webkit-background-clip: text,padding-box;
+                    background-clip: text,padding-box;
+            transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+
+   }
+   & a:hover {
+        background-color: white;
+        color: black;
+        --_p: 100%;
+        --_s: .3s;
+
+   }
+
+   & li {
+    margin-top: 20px;
+    
+   }
+  &::after {
+    content: "";
+    background-image: url("images/sun_small.png");
+    width: 300px;
+    height: 100px;
+    z-index: -1;
+    margin-top: 50px;
+    margin: auto;
+    @include breakpoint($break-b) {
+      background-image: url("images/sun.png");
+      width: 950px;
+      height: 170px;
+    }
+  }
+}

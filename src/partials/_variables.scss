@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+:root {
+  --color-primary: #000000;
+  --color-primary-alt: #908390;
+  --color-secondary: #6d809f;
+  --color-background: #d2fbf7;
+  --color-text: #dbd5c1;
+  --color-light: #fff;
+  --font-primary: Orbitron, sans-serif;
+  --font-size-h1: 2em;
+  --font-size-h2: 1.8rem;
+  --font-size-h3: 1.5em;
+  --font-size-h4: 1.2rem;
+  --font-size-text: 1rem;
+  --border-radius: 10%;
+}
+
+$break: 500px;
+$break-b: 1050px;
+
+@mixin breakpoint($break-large) {
+  @media (min-width: $break-large) {
+    @content;
+  }
+}
+
+@mixin gridPlanetDisplay() {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*TO DO 
+  1) --font-family: font-family: 'Orbitron', sans-serif; 
+  (LINK: <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">)
+
+  2) --body background-color: (https://www.youtube.com/watch?v=0t6Dmp70kTw) 
+  3) --color by Eddy:
+
+:root {
+    --color-primary: #04040c;
+    --color-primary-alt: #908390;
+    --color-secondary: #6D809F;
+    --color-background: #d2fbf7;
+    --color-text: #dbd5c1;
+    --color-light: #fff;
+    --font-size-h1: 2em;
+    --font-size-h2: 1.8rem;
+    --font-size-h3: 1.5em;
+    --font-size-h4: 1.2rem;
+    --font-size-text: 1rem;
+    --border-radius: 10%;
+  }
+
+
+
+  4) --header background-color
+  5) --hover-color
+  6) --nav layout (grid or flex)*/

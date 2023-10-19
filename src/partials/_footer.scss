@@ -1,0 +1,45 @@
+.page-footer {
+  background-color: #44445c;
+  display: flex;
+  border: none;
+  padding: 1em;
+}
+
+.page-footer ul,
+.features {
+  display: grid;
+  margin: 0 0 2rem;
+  padding: 0;
+  grid-gap: 1em;
+  list-style: none;
+}
+
+.page-footer > .container {
+  & ul {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & li {
+      border: solid white 3px;
+      padding: 1em;
+      background-color: black;
+      transition: 1.5s ease;
+      &:hover {
+        background-color: white;
+        border-radius: 30px;
+        transition: 1s ease;
+        color: black;
+        & > a {
+          color: black;
+          transition: 1s ease;
+        }
+      }
+      & a {
+        text-decoration: none;
+        color: white;
+        transition: 1s ease;
+      }
+    }
+  }
+}

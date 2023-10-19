@@ -1,0 +1,73 @@
+#files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include breakpoint($break-b) {
+    flex-direction: row;
+    text-align: start;
+  }
+  &::after {
+    content: "";
+    background-image: url("images/mercury_small.png");
+    width: 90px;
+    height: 98px;
+    z-index: -1;
+    margin-top: 25px;
+    margin: auto;
+    @include breakpoint($break-b) {
+      width: 350px;
+      height: 380px;
+      margin: auto;
+      background-image: url("images/mercury.png");
+    }
+  }
+}
+
+#files div {
+  z-index: 100;
+  width: 40%;
+  @include breakpoint($break-b) {
+    width: 20%;
+  }
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  & h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: left;
+    display: initial;
+  }
+  & a {
+    @include breakpoint($break-b) {
+      display: grid;
+      grid-template-columns: auto;
+      
+      margin: 20px;
+      transition: 1s ease;
+      z-index: 2;
+      width: 0;
+    }
+    font-size: 15px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 15px;
+    color: var(--color-light);
+    border-top: solid 1px white;
+    border-left: solid 1px white;
+    border-bottom: solid 1px white;
+    border-radius: 25px;
+    // width: 40ch;
+    &:hover {
+      transition: 1s ease;
+      background-color: white;
+      color: black;
+      
+      padding-right: 400px;
+
+    }
+  }
+}
